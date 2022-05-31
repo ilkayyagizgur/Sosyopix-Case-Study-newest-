@@ -1,17 +1,15 @@
-//
-//  ViewController.swift
-//  Sosyopix Case Study
-//
-//  Created by Ada Yagiz Gur on 28.05.2022.
-//
+
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let vc1 = UINavigationController(rootViewController: HomeViewController())
+        setViewControllers([vc1], animated: true)
+        
     }
 
 
